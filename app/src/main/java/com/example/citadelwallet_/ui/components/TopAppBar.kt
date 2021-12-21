@@ -29,19 +29,18 @@ fun AppTopAppBar(
         modifier = Modifier
             .fillMaxWidth()
             .height(56.dp)
-            .background(color),
+            .background(color)
+            .clickable { onIconClick() },
     ) {
         Icon(
             imageVector = icon,
             contentDescription = "Top App Bar Icon",
             tint = iconTint,
             modifier = Modifier
-                .clickable(onClick = onIconClick)
-                .padding(16.dp)
+                .padding(start = 8.dp)
                 .align(Alignment.CenterVertically)
                 .size(32.dp)
         )
-        Spacer(modifier = Modifier.width(18.dp))
         Text(
             text = title,
             color = titleColorFilter,
@@ -51,9 +50,9 @@ fun AppTopAppBar(
                 letterSpacing = 0.15.sp,
             ),
             modifier = Modifier
-                .fillMaxWidth()
+                .wrapContentWidth()
                 .align(Alignment.CenterVertically)
-                .padding(start = 30.dp, end = 8.dp)
+                .padding(start = 0.dp, end = 8.dp)
 
         )
     }

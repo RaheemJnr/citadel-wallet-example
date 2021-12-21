@@ -16,7 +16,7 @@ fun MainScreenNavigation() {
 
     val navController = rememberNavController()
 
-    NavHost(navController, startDestination = MainScreen.StartScreen.route) {
+    NavHost(navController, startDestination = MainScreen.UiScreen.route) {
         //weatherList
         composable(MainScreen.StartScreen.route) {
             StartScreen(navController)
