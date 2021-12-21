@@ -161,8 +161,6 @@ fun UiScreen(navController: NavController) {
                                 }
 
                             }
-
-
                         }
                     }
                 }
@@ -174,9 +172,15 @@ fun UiScreen(navController: NavController) {
                     Column(
                         Modifier
                             .background(Color(0xfff2f2f7))
-                            .padding(12.dp)
+                            .padding(horizontal = 18.dp, vertical = 16.dp)
                     ) {
-                        Text(text = "Information source: embedded genesis data")
+                        Text(
+                            text = "Information source: embedded genesis data",
+                            fontSize = 18.sp,
+                            color = Color.Gray,
+                            fontWeight = FontWeight.SemiBold,
+                            fontFamily = FontFamily.Default,
+                        )
                         Spacer(modifier = Modifier.height(12.dp))
 
 
