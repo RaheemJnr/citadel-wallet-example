@@ -34,6 +34,7 @@ fun UiScreen(navController: NavController) {
             .fillMaxSize()
             .background(Color(0xfff2f2f7))
     ) {
+        // this is just a simple design used for sample
         Scaffold(
             topBar = {
                 AppTopAppBar(

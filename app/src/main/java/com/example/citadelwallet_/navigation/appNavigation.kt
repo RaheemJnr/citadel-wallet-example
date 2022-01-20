@@ -21,7 +21,7 @@ fun MainScreenNavigation() {
         CitadelWallet_Theme {
             val navController = rememberNavController()
 
-            NavHost(navController, startDestination = MainScreen.UiScreen.route) {
+            NavHost(navController, startDestination = MainScreen.StartScreen.route) {
                 //weatherList
                 composable(MainScreen.StartScreen.route) {
                     StartScreen(navController)
